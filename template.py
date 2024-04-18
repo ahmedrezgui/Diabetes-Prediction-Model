@@ -4,7 +4,7 @@ import streamlit as st
 
 
 
-loaded_model=pickle.load(open('C:/Users/rezgu/OneDrive/Bureau/python projects/diabetes prediction/diabetes-prediction-model.sav','rb'))
+loaded_model=pickle.load(open('./diabetes-prediction-model.sav','rb'))
 
 def predict_diabetes(input_data):
     input_data_as_array = np.array(input_data)
